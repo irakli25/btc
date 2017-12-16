@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bitcoin, cryptocurrency and worldwide payment system">
+    <meta name="keywords" content="Bitcoin, Mining, Trading">
+    <meta name="author" content="Irakli Tabukashvili">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" href="img/btc.png">
+   <title>Bitcoin</title>
+<script src="js/alert.js" type="text/javascript"></script><!--- script loader -->
+
+</head>
+<body onload="myFunc()">
+  <!-- alert -------->
+      <div id="alert" class="alert">
+        <span class="closebtn" onclick="document.getElementById('alert').style.display='none';">&times;</span>
+        შემოდით როგორც მომხმარებელი ან გაიარეთ რეგისტრაცია !!!
+      </div>
+      </div>
+  <!------------------------------------------------------------------------------------------------------->
+
+
+  <!-- alert -------->
+      <div id="alertin" class="alert">
+        <span class="closebtn" onclick="document.getElementById('alertin').style.display='none';">&times;</span>
+        მომხმარებლის სახელი ან პაროლი არასწორია !!!
+      </div>
+      </div>
+  <!------------------------------------------------------------------------------------------------------->
+
+
+  <script src="js/loader.js" type="text/javascript"></script><!--- script loader -->
+  <header>
+    <a class="logo" href="index.html" > <img class="logoimg" src="img/logo.png" alt="bitcoin"/></a> <!--logo-->
+      <ul class="nav">
+          <li><a class="active" href="index.html">მთავარი</a></li>
+          <li><a href="contact.html">კონტაქტი</a></li>
+          <li><a href="about.html">ჩვენ შესახებ</a></li>
+          <li><a href="bitcoin.html">რა არის ბიტკოინი?</a></li>
+
+          <div class="dropbtn">
+            <img class="log" src="img/log.ico"/>
+              <div class="dropdown-content">
+                <a onclick="document.getElementById('id01').style.display='block';" href="#">ავტორიზაცია</a>
+                <a href="register.html">რეგისტრაცია</a>
+              </div>
+            </div>
+      </ul>
+
+
+      <!-- header image-->
+        <div class="head">
+      <img class="header_pic" src="img/headerpic.jpg" alt="Bitcoin"/>
+      <div class="bottomright">შეუერთდი რევოლუციას !!!</div>
+  </div>
+  <!--header image end-->
+</header><!-- header end----------------------------------------------->
+  <div id="wrapper">
+    <section class="left">
+      <img class="btcgif1" src="img/gifbtc.gif"  alt="bitcoin"/>
+      <ul class="buttons">
+        <h3> აირჩიეთ ბირჟა</h3>
+        <li><button  onclick="Bitfinex()">Bitfinex</button></li>
+        <li><button   onclick="Bitstamp()">Bitstamp</button></li>
+        <li><button  onclick="Kraken()">Kraken</button></li>
+
+      </ul>
+
+    </section >
+    <section class="right">
+      <h1>ბიტკოინის ბირჟა</h1>
+      <h2>Live <h2><br/><br/>
+      <iframe id="tablo" src="https://cryptowat.ch/bitfinex/btcusd" ></iframe>
+      <div id="loader"></div>
+    </section>
+
+    <section class="bottom">
+          <marquee behavior="scroll" direction="right" scrollamount="10"> <i> ა ი რ ჩ ი ე თ ! ! ! </i><br/><br/></marquee>
+      <div class="div" >
+      <img class="mining" src="img/mining.png" onclick="myalert();" alt="Bitcoin mining"/> <!-- მოპოვება -->
+      <span class="textmining">ბიტკოინის მოპოვება</span>
+    </div>
+
+    <div  class="div">
+     <img class="trading" src="img/trade.jpg" onclick="myalert();" alt="Bitcoin Trading"/><!-- ვაჭრობა -->
+      <span class="texttrading">ბიტკოინით ვაჭრობა</span>
+    </div>
+
+    </section>
+
+
+<!------ log in --->
+
+
+    <div id="id01" class="modal">
+
+      <form class="modal-content animate" >
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="img/btc.png" alt="btc" class="login_logo">
+        </div>
+
+        <div class="container">
+          <label><b>მომხმარებლის სახელი</b></label>
+          <input class="register_in" type="text" placeholder="შეიყვანეთ სახელი.." name="uname" required>
+
+          <label><b>პაროლი</b></label>
+          <input class="register_in" type="password" placeholder="შეიყვანეთ პაროლი.." name="psw" required>
+
+          <button form="none" class="register_button" type="submit" onclick="myalert2();">შესვლა</button><br/>
+
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+
+
+        </div>
+      </form>
+    </div>
+
+<!------ log in end ---------------------------------------------------------------------------------------------------------->
+
+</div>
+  <footer>
+    <img class="footerimg"src="img/btc.png" alt="btc"/>
+     <p>&copy; 2017 ირაკლი თაბუკაშვილი</p>
+
+  </footer>
+</body>
+</html>
