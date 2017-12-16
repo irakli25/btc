@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bitcoin, cryptocurrency and worldwide payment system">
+    <meta name="keywords" content="Bitcoin, Mining, Trading">
+    <meta name="author" content="Irakli Tabukashvili">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" href="img/btc.png">
+   <title>Bitcoin</title>
+
+
+</head>
+<body>
+
+  <!-- alert -------->
+      <div id="alert" class="alert">
+        <span class="closebtn" onclick="document.getElementById('alert').style.display='none';">&times;</span>
+        დროებით რეგისტრაციის გავლა შეუძლებელია !!!
+      </div>
+      </div>
+  <!------------------------------------------------------------------------------------------------------->
+
+  <!-- alert -------->
+      <div id="alertin" class="alert">
+        <span class="closebtn" onclick="document.getElementById('alertin').style.display='none';">&times;</span>
+        მომხმარებლის სახელი ან პაროლი არასწორია !!!
+      </div>
+      </div>
+  <!------------------------------------------------------------------------------------------------------->
+
+  <header>
+    <a href="index.html" > <img class="logo" src="img/logo.png" alt="bitcoin"/></a> <!--logo-->
+      <ul class="nav">
+          <li><a  href="index.html">მთავარი</a></li>
+          <li><a  href="contact.html">კონტაქტი</a></li>
+          <li><a href="about.html">ჩვენ შესახებ</a></li>
+          <li><a href="bitcoin.html">რა არის ბიტკოინი?</a></li>
+          <div class="dropbtn">
+            <img class="log" src="img/log.ico"/>
+              <div class="dropdown-content">
+                <a onclick="document.getElementById('id01').style.display='block';" href="#">ავტორიზაცია</a>
+                <a href="register.html">რეგისტრაცია</a>
+              </div>
+            </div>
+      </ul>
+
+
+</header><!-- header end----------------------------------------------->
+  <div id="wrapper">
+
+
+
+    <div class="register_div">
+      <form >
+        <label >სახელი</label>
+        <input class="register_in" type="text" id="fname" name="firstname" placeholder="თქვენი სახელი.." required>
+
+        <label>ელფოსტა</label>
+        <input class="register_in" type="text" id="lname" name="lastname" placeholder="თქვენი ელფოსტა.." required>
+
+        <label>პაროლი</label>
+        <input class="register_in" type="password" id="lname" name="lastname" placeholder="თქვენი პაროლი.." required>
+
+        <label>გაიმეორეთ პაროლი</label>
+        <input class="register_in" type="password" id="lname" name="lastname" placeholder="თქვენი პაროლი.." required>
+
+
+
+      </form>
+      <input class="register_button" type="submit" value="რეგისტრაცია" onclick="myalert();">
+    </div>
+
+
+
+    <!------ log in --->
+
+
+        <div id="id01" class="modal">
+
+          <form class="modal-content animate" >
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="img/btc.png" alt="btc" class="login_logo">
+            </div>
+
+            <div class="container">
+              <label><b>მომხმარებლის სახელი</b></label>
+              <input class="register_in" type="text" placeholder="შეიყვანეთ სახელი.." name="uname" required>
+
+              <label><b>პაროლი</b></label>
+              <input class="register_in" type="password" placeholder="შეიყვანეთ პაროლი.." name="psw" required>
+
+              <button form="none" class="register_button" type="submit" onclick="myalert2();">შესვლა</button><br/>
+
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+
+
+            </div>
+          </form>
+        </div>
+
+    <!------ log in end ---------------------------------------------------------------------------------------------------------->
+
+
+
+<script src="js/alert.js" type="text/javascript"></script><!--- script loader -->
+
+  </div>
+  <footer>
+    <img class="footerimg" src="img/btc.png" alt="btc"/>
+     <p>&copy; 2017 ირაკლი თაბუკაშვილი</p>
+
+  </footer>
+</body>
+</html>
