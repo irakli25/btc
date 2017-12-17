@@ -116,7 +116,7 @@ img.header_pic
   height: auto;
 }
 
-a.logo
+.logo
 {
   background-color: #333333;
   float:left;
@@ -142,7 +142,7 @@ ul.nav li a.active{background-color: #FF8800;}
 section.left
 {
  float:left;
- width:29%;
+ width:30%;
 
 }
 
@@ -155,13 +155,17 @@ section.left
 
 ul.buttons
 {
+  padding-top:25px;
   margin-left:30%;
+  box-shadow:  2px 1px 15px rgba(0, 0, 0, 0.2) inset;
+  text-align: center;
+
 
 }
 ul.buttons button
 {
   border-radius: 15px 50px;
-    padding: 20px;
+    padding: 0 20px;
     width: 100px;
     height: 75px;
   overflow: hidden;
@@ -173,10 +177,17 @@ ul.buttons button
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
+  margin-left:20%;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
   border:2px solid  #FF8800;
+  box-shadow:  7px 10px 15px rgba(0, 0, 0, 0.2) ;
+}
+
+ul.buttons :last-child
+{
+  margin-bottom: 20px;
 }
 
 
@@ -419,7 +430,7 @@ footer img{
 
 textarea.cont_textarea {
     width: 80%;
-    height: 550px;
+    height: 350px;
     padding: 12px 20px;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -442,10 +453,10 @@ textarea.cont_textarea {
   color:#fff;
   border-radius: 15px 50px;
     padding: 20px;
-    width: 200px;
-    height: 150px;
+    width: 120px;
+    height: 90px;
   background-color: #FF8800;
-  margin:5% 40% ;
+  margin:1% 40% 3% ;
   cursor: pointer;
   border:2px solid  #FF8800;
 }
@@ -647,27 +658,26 @@ img.login_logo {
 
 
 
-/* The Modal (background) */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-     /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
     padding-top: 60px;
 }
 
-/* Modal Content/Box */
+
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 5% auto 15% auto;
     border: 1px solid #888;
-    width: 60%; /* Could be more or less, depending on screen size */
+    width: 60%;
 }
 
 /* The Close Button (x) */
