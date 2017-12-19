@@ -13,14 +13,14 @@
 
 
 </head>
-<body>
+<body onclick="closemenu()">
 
   <!-- alert -------->
       <div id="alert" class="alert">
         <span class="closebtn" onclick="document.getElementById('alert').style.display='none';">&times;</span>
         დროებით რეგისტრაციის გავლა შეუძლებელია !!!
       </div>
-      </div>
+
   <!------------------------------------------------------------------------------------------------------->
 
   <!-- alert -------->
@@ -28,10 +28,20 @@
         <span class="closebtn" onclick="document.getElementById('alertin').style.display='none';">&times;</span>
         მომხმარებლის სახელი ან პაროლი არასწორია !!!
       </div>
-      </div>
-  <!------------------------------------------------------------------------------------------------------->
 
-  <header>
+  <!------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------menu------------------------------------------------------------------>
+  <div id="mobile_list">
+    <ul class="nav">
+      <li><a href="index.html">მთავარი</a></li>
+      <li><a href="contact.html">კონტაქტი</a></li>
+      <li><a href="about.html">ჩვენ შესახებ</a></li>
+      <li><a href="bitcoin.html">რა არის ბიტკოინი?</a></li>
+    </ul>
+  </div>
+
+  <!-------------------------------------------------------------------------------------------------------->
+  <header id="main_header">
     <a class="logo" href="index.html" > <img class="logoimg" src="img/logo.png" alt="bitcoin"/></a> <!--logo-->
       <ul class="nav">
           <li><a  href="index.html">მთავარი</a></li>
@@ -49,6 +59,27 @@
 
 
 </header><!-- header end----------------------------------------------->
+
+<!--header for mobile--->
+
+<header id="mobile_header">
+  <a class="logo" href="index.html" > <img class="logoimg" src="img/logo.png" alt="bitcoin"/></a> <!--logo-->
+
+      <ul class="nav">
+        <li><img class="mobilemenu" src="img/menu.png" onclick="menu();" alt="menu"/></li>
+          <div class="dropbtn">
+            <img class="log" src="img/log.ico"/>
+              <div class="dropdown-content">
+                <a onclick="document.getElementById('id01').style.display='block';" href="#">ავტორიზაცია</a>
+                <a href="register.html">რეგისტრაცია</a>
+              </div>
+            </div>
+        </ul>
+
+
+</header><!-- header mobile end----------------------------------------------->
+
+
   <div id="wrapper">
 
 

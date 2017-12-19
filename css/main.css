@@ -18,8 +18,68 @@ body{
   font-family: sans-serif, serif;
 }
 
+/*********************header*********************************/
 
-ul.nav
+/********************************mobile_header**************************/
+
+#mobile_header
+{
+  display: none;
+  width:100%;
+}
+
+.mobilemenu
+{
+  float:left;
+  width:30px;
+  height:auto;
+  padding-top: 10px;
+  margin-left:5px;
+  transition: all .2s ease-in-out;
+  display: block;
+}
+
+.mobilemenu:hover{
+ transform: scale(1.1);
+}
+
+
+#mobile_list
+{
+  text-align: center;
+    height:100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    background-color: #333333;
+    overflow: hidden;
+    padding-top: 20px;
+    transition: all 0.5s;
+
+}
+
+
+#mobile_list li
+{
+  padding-bottom:10px;
+}
+
+
+#mobile_list li a
+{
+  padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      display: block;
+}
+
+
+/*******************************************end mobile_header***********************************/
+
+
+
+.nav
 {
 
   overflow:hidden;
@@ -47,6 +107,18 @@ ul.nav li a{
 .log
 
 {
+  margin-top:5px;
+  width:30px;
+  height:auto;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  float:right;
+  margin-right: 1%;
+transition: all .2s ease-in-out;
+}
+.log:hover{ transform: scale(1.1);}
+.dropbtn {
+
   width:30px;
   height:auto;
   padding-top: 0.5%;
@@ -54,15 +126,6 @@ ul.nav li a{
   float:right;
   margin-right: 1%;
 
-}
-.log:hover{background-color: #111111;}
-.dropbtn {
-  width:30px;
-  height:auto;
-  padding-top: 0.5%;
-  padding-bottom: 0.5%;
-  float:right;
-  margin-right: 1%;
 }
 
 .dropdown-content {
@@ -138,6 +201,7 @@ ul.nav li a:hover:not(.active){background-color:#111111; transform: scale(1.1);}
 ul.nav li a.active{background-color: #FF8800;}
 
 /*------------------------------------header end-------------------------------------------------------*/
+
 
 section.left
 {
@@ -724,6 +788,17 @@ img.login_logo {
 /************************************ media for mobile*/
 @media screen and (max-width:768px)
 {
+
+#main_header{display:none;}
+#mobile_header{display:inline-block;}
+.dropbtn {
+  height:46px;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  float:right;
+  margin-right: 1%;
+}
+
   #wrapper{
       max-width: 700px;
   }

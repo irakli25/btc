@@ -9,17 +9,18 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="icon" href="img/btc.png">
-   <title>Bitcoin</title>
+   <title id = "title">Bitcoin</title>
 <script src="js/alert.js" type="text/javascript"></script><!--- script loader -->
 
 </head>
-<body onload="myFunc()">
+
+<body  onload="myFunc()" onclick="closemenu()">
   <!-- alert -------->
       <div id="alert" class="alert">
         <span class="closebtn" onclick="document.getElementById('alert').style.display='none';">&times;</span>
         შემოდით როგორც მომხმარებელი ან გაიარეთ რეგისტრაცია !!!
       </div>
-      </div>
+
   <!------------------------------------------------------------------------------------------------------->
 
 
@@ -28,19 +29,29 @@
         <span class="closebtn" onclick="document.getElementById('alertin').style.display='none';">&times;</span>
         მომხმარებლის სახელი ან პაროლი არასწორია !!!
       </div>
-      </div>
-  <!------------------------------------------------------------------------------------------------------->
 
+  <!------------------------------------------------------------------------------------------------------->
+  <!---------------------------menu---------------------------------------->
+  <div id="mobile_list">
+    <ul class="nav">
+      <li><a class="active" href="index.html">მთავარი</a></li>
+      <li><a href="contact.html">კონტაქტი</a></li>
+      <li><a href="about.html">ჩვენ შესახებ</a></li>
+      <li><a href="bitcoin.html">რა არის ბიტკოინი?</a></li>
+    </ul>
+  </div>
+
+  <!-------------------------------------------------------------------------------------------------------->
 
   <script src="js/loader.js" type="text/javascript"></script><!--- script loader -->
-  <header>
+
+  <header id="main_header">
     <a class="logo" href="index.html" > <img class="logoimg" src="img/logo.png" alt="bitcoin"/></a> <!--logo-->
       <ul class="nav">
           <li><a class="active" href="index.html">მთავარი</a></li>
-          <li><a href="contact.html">კონტაქტი</a></li>
-          <li><a href="about.html">ჩვენ შესახებ</a></li>
+          <li><a  href="contact.html">კონტაქტი</a></li>
+          <li><a  href="about.html">ჩვენ შესახებ</a></li>
           <li><a href="bitcoin.html">რა არის ბიტკოინი?</a></li>
-
           <div class="dropbtn">
             <img class="log" src="img/log.ico"/>
               <div class="dropdown-content">
@@ -50,19 +61,46 @@
             </div>
       </ul>
 
-
       <!-- header image-->
         <div class="head">
-      <img class="header_pic" src="img/headerpic.jpg" alt="Bitcoin"/>
+      <img id="mainimg" class="header_pic" src="img/headerpic.jpg" alt="Bitcoin"/>
       <div class="bottomright">შეუერთდი რევოლუციას !!!</div>
   </div>
   <!--header image end-->
 </header><!-- header end----------------------------------------------->
+
+
+<!--header for mobile--->
+
+<header id="mobile_header">
+  <a class="logo" href="index.html" > <img class="logoimg" src="img/logo.png" alt="bitcoin"/></a> <!--logo-->
+
+      <div class="nav">
+        <img class="mobilemenu" src="img/menu.png" onclick="menu();" alt="menu"/>
+          <div class="dropbtn">
+            <img class="log" src="img/log.ico"/>
+              <div class="dropdown-content">
+                <a onclick="document.getElementById('id01').style.display='block';" href="#">ავტორიზაცია</a>
+                <a href="register.html">რეგისტრაცია</a>
+              </div>
+            </div>
+        </div>
+
+
+    <!-- header image-->
+      <div class="head">
+    <img id="mainimg" class="header_pic" src="img/headerpic.jpg" alt="Bitcoin"/>
+    <div class="bottomright">შეუერთდი რევოლუციას !!!</div>
+</div>
+<!--header image end-->
+</header><!-- header mobile end----------------------------------------------->
+
+
   <div id="wrapper">
     <section class="left">
       <img class="btcgif1" src="img/gifbtc.gif"  alt="bitcoin"/>
       <ul class="buttons">
-        <h3> აირჩიეთ ბირჟა</h3>
+        <h1> აირჩიეთ ბირჟა</h1>
         <li><button  onclick="Bitfinex()">Bitfinex</button></li>
         <li><button   onclick="Bitstamp()">Bitstamp</button></li>
         <li><button  onclick="Kraken()">Kraken</button></li>
