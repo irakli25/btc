@@ -8,8 +8,9 @@
 }
 
 body{
-
+    
   background-color: hsl(0, 0%, 100%);
+  overflow-x: hidden;
 
 }
 
@@ -54,7 +55,7 @@ body{
     background-color: #333333;
     overflow: hidden;
     padding-top: 20px;
-    transition: all 0.5s;
+    transition: all 0.3s;
 
 }
 
@@ -877,9 +878,9 @@ ul.buttons li{
 
 .btc_p
 {
-  width:100%;
+  width:90%;
 }
-
+.btc img{width:100%;}
 .dropdown-content
 {
   margin-top:44px;
