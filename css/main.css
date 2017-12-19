@@ -832,9 +832,9 @@ img.login_logo {
   }
 
 section.left ul{
-  width:80%;
-  vertical-align: middle;
-  margin-left: 20px;
+  width:100%;
+  margin-left:0;
+
 }
 
 section.left ul li
@@ -847,7 +847,7 @@ ul.buttons button
 {
   width: 90px;
   height: 37px;
-
+  margin:0;
 }
 
 
