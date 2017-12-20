@@ -890,9 +890,10 @@ ul.buttons li{
 
 .btc_p
 {
+  overflow: hidden;
   width:90%;
 }
-.btc img{width:100%;}
+.btc img{width:100%; overflow: hidden;}
 .dropdown-content
 {
   margin-top:44px;
