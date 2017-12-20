@@ -55,8 +55,9 @@ body{
     background-color: #333333;
     overflow: hidden;
     padding-top: 20px;
-    transition: all 0.3s;
-
+    transition: 0.5s;
+    display: inline;
+    overflow: hidden;
 }
 
 
@@ -72,7 +73,7 @@ body{
       text-decoration: none;
       font-size: 20px;
       color: white;
-      display: block;
+
 }
 
 
@@ -231,14 +232,14 @@ ul.buttons
 
 }
 
-@media screen and (max-width:800px and min-width:770px)
+
+@media screen and (max-width:1200px )
 {
   ul.buttons
   {
     margin-top:20px;
   }
 }
-
 
 ul.buttons button
 {
@@ -841,10 +842,11 @@ img.login_logo {
 
   }
   iframe{
-    width:100%;
+    width:98%;
     height:400px;
     overflow:auto;
     margin-left:-10px;
+    margin-left: 1%;
   }
 
 section.left ul{
@@ -858,6 +860,12 @@ section.left ul li
   display: inline-block;
 
 }
+
+ul.buttons
+{
+  height:300px;
+}
+
 
 ul.buttons button
 {
