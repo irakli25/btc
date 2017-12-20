@@ -24,5 +24,5 @@ window.onclick = function(event) {
 function closemenu() {
   if(document.getElementById("mobile_list").style.width == "160px" )
   {
-  document.getElementById("mobile_list").style.width = "0";}
+  document.getElementById("mobile_list").style.width = "0px";}
 }
