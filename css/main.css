@@ -228,7 +228,7 @@ ul.buttons
   margin-top:5px;
   padding-top:25px;
   margin-left:90px;
-  
+
   text-align: center;
 
 
@@ -648,7 +648,7 @@ textarea.cont_textarea {
     padding: 20px;
     background-color: #f44336;
     color: white;
-    margin:2% 10px;
+    margin:2% 10%;
     width:80%;
     border-radius:15px;
     background-color:#FF8800;
